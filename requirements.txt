@@ -1,1 +1,4 @@
 Django
+pycups
+git+https://github.com/botswana-harvard/edc-base@develop#egg=edc_base
+git+https://github.com/erikvw/django-revision@develop#egg=django_revision
