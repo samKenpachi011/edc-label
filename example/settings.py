@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'django_js_reverse',
     # 'django_crypto_fields.apps.AppConfig'
     'edc_base.apps.AppConfig',
     # 'edc_registration.apps.AppConfig',
