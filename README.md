@@ -6,3 +6,8 @@ Print labels from edc modules
 
     pip install git+https://github.com/botswana-harvard/edc-label@develop#egg=edc_label
     
+if you get an error installing on MACOSX, try
+    
+    CFLAGS=-Wno-error=declaration-after-statement pip install -U pycups
+    
+    (suggestion from http://stackoverflow.com/questions/34040118/error-updating-pycups-via-pip)
