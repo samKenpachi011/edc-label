@@ -1,0 +1,19 @@
+os: linux
+
+language: python
+python: "3.9"
+
+install:
+  - pip install --upgrade pip
+  - pip install -r requirement.txt
+  - pip install flake8
+  - pip install coveralls
+
+before_script:
+  - flake8 edc_label
+
+script:
+   - coverage run --source=edc_label manage.py test
+
+after_success:
+- coveralls
