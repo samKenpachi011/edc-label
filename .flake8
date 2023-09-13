@@ -10,4 +10,4 @@ exclude =
   */migrations/*
 
 per-file-ignores =
-    edc_label/urls.py:W605
+  edc_label/urls.py:W605
