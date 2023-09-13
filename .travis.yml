@@ -20,7 +20,8 @@ before_script:
   - flake8 edc_label
 
 script:
-   - coverage run --source=edc_label manage.py test
+  - python manage.py test
+  # - coverage run --source=edc_label manage.py test
 
 after_success:
-- coveralls
+  - coveralls
