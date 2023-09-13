@@ -14,7 +14,8 @@ class AliquotLabel(ModelLabel):
         template_name = 'aliquot_label'
         if not ZplTemplate.objects.filter(name=template_name):
             template_string = ("""^XA
-                ^FO300,15^A0N,20,20^FD${protocol} Site ${site} ${clinician_initials}   ${aliquot_type} ${aliquot_count}${primary}^FS
+                ^FO300,15^A0N,20,20^FD${protocol}
+                Site ${site} ${clinician_initials}   ${aliquot_type} ${aliquot_count}${primary}^FS
                 ^FO300,34^BY1,3.0^BCN,50,N,N,N
                 ^BY^FD${aliquot_identifier}^FS
                 ^FO300,92^A0N,20,20^FD${aliquot_identifier}^FS
