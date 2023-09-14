@@ -3,14 +3,14 @@ import cups
 from django.apps import apps as django_apps
 from django.test import TestCase, tag
 from pprint import pprint
-from edc_label.print_server import PrinterError
 from django.urls.base import reverse
 from django.test.client import RequestFactory
 
 from ..label import Label
 from ..label_template import LabelTemplate, LabelTemplateError
+from ..printer import Printer, PrinterError
 from ..labeler import Labeler
-from ..print_server import PrintServer, Printer, PrintServerSelectPrinterError
+from ..print_server import PrintServer, PrintServerSelectPrinterError
 
 
 class DummyPrintServer(PrintServer):

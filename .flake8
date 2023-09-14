@@ -8,6 +8,7 @@ exclude =
   manage.py
   */wsgig.py
   */migrations/*
+  tests.py
 
 per-file-ignores =
     edc_label/urls.py:W605
