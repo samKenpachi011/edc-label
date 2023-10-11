@@ -2,7 +2,12 @@ os: linux
 dist: focal
 language: python
 
-python: "3.11"
+python:
+  - "3.11"
+
+branches:
+  only:
+  - develop
 
 addons:
   apt:
@@ -13,7 +18,6 @@ install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
   - pip install flake8
-  - pip install flake8-per-file-ignores
   - pip install coveralls coverage
 
 before_script:
